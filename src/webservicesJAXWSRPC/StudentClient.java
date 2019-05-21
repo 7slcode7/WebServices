@@ -18,7 +18,7 @@ public class StudentClient {
     public static void main(String[] args) throws MalformedURLException {
         URL url = new URL("http://localhost:1231/ws/student?wsdl");
         
-        QName qname = new QName("http://webservices/","WebServicesService" );
+        QName qname = new QName("http://webservicesJAXWSRPC/","WebServicesService" );
         Service service = Service.create(url, qname);
         StudentWebService obj = service.getPort(StudentWebService.class);
         System.out.println(obj.getHelloMessage("Lahiru"));

@@ -12,7 +12,7 @@ import javax.jws.WebService;
  * @author Lahiru Chandima
  * Below web service is implemented using JAX WS API
  */
-@WebService (endpointInterface = "webservices.StudentWebService")
+@WebService (endpointInterface = "webservicesJAXWSRPC.StudentWebService")
 public class WebServices implements StudentWebService{
     
 

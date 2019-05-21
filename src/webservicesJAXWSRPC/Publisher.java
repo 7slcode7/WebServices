@@ -13,6 +13,8 @@ import javax.xml.ws.Endpoint;
  */
 public class Publisher {
     public static void main(String[] args) {
+        System.out.println("Attemptring to start Student web service");
         Endpoint.publish("http://localhost:1231/ws/student",new WebServices());
+        System.out.println("Student web service started");
     }
 }
